@@ -7,6 +7,11 @@ import Home from './pages/Home';
 import Products from './pages/Products';
 import Cart from './pages/Cart';
 import { CartProvider } from './context/CartContext';
+import axios from 'axios';
+
+// Configuración de la API - Usará la URL de producción en Vercel
+// o localhost:5000 en desarrollo
+axios.defaults.baseURL = process.env.REACT_APP_API_URL || 'https://clothing-delivery.onrender.com/api';
 
 const theme = createTheme({
   palette: {

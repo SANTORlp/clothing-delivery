@@ -1,12 +1,12 @@
 {
-  "name": "clothing-delivery",
+  "name": "clothing-delivery-client",
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "start": "cd server && node server.js",
-    "server": "cd server && npm start",
-    "client": "cd client && npm start",
-    "dev": "concurrently \"npm run server\" \"npm run client\""
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
@@ -14,12 +14,9 @@
     "@mui/icons-material": "^7.3.5",
     "@mui/material": "^7.3.5",
     "axios": "^1.13.2",
-    "bcryptjs": "^3.0.3",
-    "cors": "^2.8.5",
-    "dotenv": "^17.2.3",
-    "express": "^5.1.0",
-    "jsonwebtoken": "^9.0.2",
-    "mongoose": "^8.19.3",
-    "react-router-dom": "^7.9.6"
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^7.9.6",
+    "react-scripts": "5.0.1"
   }
 }

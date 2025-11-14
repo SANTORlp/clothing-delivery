@@ -12,12 +12,6 @@ const {
 
 const { protect, authorize } = require('../middleware/auth');
 
-// Include other resource routers
-const reviewRouter = require('./reviews');
-
-// Re-route into other resource routers
-router.use('/:productId/reviews', reviewRouter);
-
 router.route('/radius/:zipcode/:distance').get(getProductsInRadius);
 
 router
